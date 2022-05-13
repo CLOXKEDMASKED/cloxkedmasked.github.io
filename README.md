@@ -1,3 +1,9 @@
-# cloxkedmasked.github.io
-## So uhhh yeah. Welcome.
-## Only people who found out or I told should know about this xd
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>cloxkedmasked.github.io</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+  </body>
+ </html>
