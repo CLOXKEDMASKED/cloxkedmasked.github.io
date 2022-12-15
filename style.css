@@ -24,6 +24,7 @@
   align-items: center;
   border-raidius: 60;
   padding: 10px 20px;
+  backdrop-filter: blur(4px) saturate(180%);
 }
 .search-bar input{
   background: transparent;
