@@ -4,3 +4,11 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
+.container{
+  width: 100%;
+  min-height: 100vh;
+  padding: 5%;
+  background-image: linear-gradient(rgba(0,8,51,0.9),rgba(0,8,51,0.9)), url(images/background.jpg);
+  background-position: center;
+  background-size: cover;
