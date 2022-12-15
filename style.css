@@ -34,3 +34,7 @@
   font-dize: 20px;
   color: #cac7ff;
 }
+
+::placeholder{
+    color: #cac7ff
+}  
