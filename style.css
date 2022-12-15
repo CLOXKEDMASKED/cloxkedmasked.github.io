@@ -16,3 +16,12 @@
   align-items: center;
   justify-content: center;
 }
+.search-bar{
+  width: 100%;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.2)
+  display: flex;
+  align-items: center;
+  border-raidius: 60;
+  padding: 10px 20px;
+}
