@@ -1,40 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="./src/index.css">
-        <link id="favicon" rel="icon" href="./src/index.svg">
-        <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
-        <meta name="description" content="Access the world wide web">
-        <title>Incognito</title>
-        $head
-    </head>
-    <body data-page="$id" data-engine="$engine" data-appearance="$theme">
-        <header>
-            <nav>
-                <section>
-                    <a class="home" href="/"><svg class="nav-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 365.37 365.37"><defs>    <style>       .cls-1{    fill:none;    stroke-width:18px;}  .cls-1, .cls-2 {    stroke: var(--secondary-color);    stroke-miterlimit:10;} .cls-2 {    fill: var(--secondary-color);    stroke-width:5px;}    </style>  </defs><circle class="cls-1" cx="182.68" cy="182.68" r="173.68" /><path class="cls-2" d="M210.41,66.38A115.27,115.27,0,0,1,70.52,248.19,134,134,0,1,0,210.41,66.38Z" transform="translate(-17.32 -17.32)" /></svg></a>
-                </section>
-                <section>
-                    <a href="./settings">Settings</a>
-                    <a href="./support">Support</a>
-                    <a href="./gs">Games</a>
-                </section>
-            </nav>
-        </header>
-        $main
-        <footer>
-            <nav>
-                <section>
-                    <a href="./privacy">Privacy Policy</a>
-                    <a href="https://discord.gg/unblock">Community</a>
-                    <a href="https://github.com/titaniumnetwork-dev/Incognito">GitHub</a>
-                </section>
-                <section>
-                    <span>Incognito 2021</span>
-                </section>
-            </nav>
-        </footer>
-        $bottom
-        <script src="./src/index.js"></script>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        <title>CLOXKED Browser</title>
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+  .search {
+   margin: 0 auto;
+   text-align: center;
+  }
+  
+  .search h4{
+    margin: 50px 0px 20px 0px;
+    font-size: 30px; 
+  }
+  
+  .search input[type=text]{
+    width: 60%;
+    border-radius: 30px;
+    outline: none;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border: solid 1px pink;
+  }
+  
+  .search a{
+    background-color: #fcfafa
+    margin-top: 20px;
+    width: 100px;
+    text-align: center;
+    margin-left: 5px;
+  }
+  
+  .search a:hover{
+    background-color: #d6edf3;
+  }
+
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<!-- Search Bar -->  
+  <div class="search">
+    <h4>CLOXKED</h4>
+    <input type="text" placeholder="Search Something..."><br>
+    <a href="#" class="btn">Dictionary</a>
+    <a href="#" class="btn">Scholar</a>
+</div>
+
+</body>
 </html>
