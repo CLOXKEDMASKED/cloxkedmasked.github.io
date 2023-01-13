@@ -1,3 +1,5 @@
+**PLEASE NOTE THAT THIS WAS MADE SO ANYONE CAN USE THIS WITHOUT HAVING TO SET IT UP, AND THIS WAS NOT MADE BY ME IT IS MADE BY THE TITANIUMNETWORK DEV**
+
 # TitaniumLite
 
 A simple and lightweight web-proxy site built to be easy to use and modify for everyone.
