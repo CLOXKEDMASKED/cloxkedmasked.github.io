@@ -1,4 +1,4 @@
-yes, i took most of the stuff from the other repostry but I'm trying to add more gaes myself so.
+yes, i took most of the stuff from the other repostry but I'm trying to add more games myself so.
 
 - https://oddgames.uk/
 - https://funmath.club/
