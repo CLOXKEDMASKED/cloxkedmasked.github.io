@@ -1,4 +1,4 @@
-yes, i took most of the stuff from the other repostry but I'm trying to add more games myself so.
+Please support the orginal creator and I took all the code so I can expierment and I want to add my own games so.
 
 - https://oddgames.uk/
 - https://funmath.club/
