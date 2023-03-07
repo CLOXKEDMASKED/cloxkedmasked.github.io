@@ -7,6 +7,14 @@
 html {
   scroll-behavior: smooth;
 }
+p {
+  font-size: 3vmin;
+  line-height: 2em;
+  letter-spacing: 0.05em;
+  text-align: justify;
+  margin: 50px 0;
+  padding: 0 30px;
+}
 #progress {
   position: fixed;
   bottom: 20px;
