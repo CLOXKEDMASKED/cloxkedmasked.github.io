@@ -1,12 +1,80 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>My Drive - Google Drive</title>
-    <link rel="icon" type="image/x-icon" href="./favicon.png">
-    <link rel="shortcut icon" href="../images/nklogo-icon.ico">
-    <meta name="robots" content="noindex,nofollow" />
-    <body style="background-color:black">
-        <iframe src="https://juicycroissant.cf/service/hvtrs8%2F-wuw%2Cymuvu%60e%2Ccmm-" width="1920" height="1080" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;"></iframe>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <title>My Drive - Google Drive</title>
+      <link rel="icon" type="image/x-icon" href="./icons/favicon.ico">
+        <meta property="og:title" content="Play unblocked games online" />
+        <meta property="og:description" content="games" />
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/d0c5025972.js" crossorigin="anonymous"></script>
+        <meta name="theme-color" content="var(--bgColor)">
+    </head>
+    <body>
+            <!--Page Content Below-->
+        <img id="userPhoto" class="animated rubberBand fast" src="icons/logo.png" alt="Your Name's Photo">
+        <h1 class="animated jello game_title">Videos</h1>
+        <div id="links" class="animated fadeInLeft delay-1s games">
+            <div class="game_title"><input placeholder="Search" id="search" class="search" onkeyup="search_it()" type="search"><select id="tags" class="button" onclick="search_it()"><option value="all">All</option><option value="pop">Popular</option><option value="two">Two Player</option><option value="stream">Streaming</option><option value="bad">Bad Games</option></select></div>
+            <h2 class="animated jello game_title">All Apps:</h2>
+            <a id="Back To Home" class="link" href="#" target="_blank"><span class="bar"></span><img src="./icons/home.webp" alt="Back To Home"><b>Back To Home</b></a>
+            <a id="Ishowspeed - yo chat whys this game so fun" class="link" href="./ishowspeed1" target="_blank"><span class="bar"></span><img src="./icons/stream.webp" alt="Ishowspeed - yo chat whys this game so fun"><b>Ishowspeed - yo chat whys this game so fun</b></a>
+      <script>
+            function search_it() {
+                var tag = document.getElementById("tags").value
+                var what_search = document.getElementById("search").value
+                var pop_list = document.querySelectorAll(".pop")
+                var two_list = document.querySelectorAll(".two")
+                if(what_search === "" && tag == "all"){
+                    for(var i=0;i<game_list.length;i++){
+                        document.getElementById(game_list[i].id).style.display = "flex"
+                    }
+                    for(var i=0;i<good_games.length;i++){
+                        document.getElementById(good_games[i].id).style.display = "flex"
+                    }
+                }else{
+                    var active_list = document.querySelectorAll(".active")
+                    for(var i=0;i<active_list.length;i++){
+                        document.getElementById(active_list[i].id).classList.remove("active")
+                    }
+                    for(var i=0;i<game_list.length;i++){
+                        document.getElementById(game_list[i].id).style.display = "none"
+                    }
+                    for(var i=0;i<good_games.length;i++){
+                        document.getElementById(good_games[i].id).style.display = "none"
+                    }
+                    for(var i=0;i<game_list.length;i++){
+                        item = game_list[i].id.toLowerCase()
+                        item2 = document.getElementById(game_list[i].id)
+                        if(item.includes(what_search.toLowerCase())){
+                            if(tag == "pop" && item2.classList.contains("pop")){
+                                document.getElementById(game_list[i].id).classList.add("active")
+                            }
+                            else if(tag == "two" && item2.classList.contains("two")){
+                                document.getElementById(game_list[i].id).classList.add("active")
+                            }
+                            else if(tag == "stream" && item2.classList.contains("stream")){
+                                document.getElementById(game_list[i].id).classList.add("active")
+                            }
+                            else if(tag == "bad" && item2.classList.contains("bad")){
+                                document.getElementById(game_list[i].id).classList.add("active")
+                            }
+                            else if(tag == "all"){
+                                document.getElementById(game_list[i].id).classList.add("active")
+                            }
+                            }
+                        }
+                }}
+            var game_list = document.querySelectorAll(".link");
+            var good_games = document.querySelectorAll(".glink");
+            search_enter = document.getElementById("search");
+            search_enter.addEventListener("keyup",(event) => {
+                if(event.key === "Enter"){
+                    search_it();
+                }
+            })
+
+        </script>
     </body>
 </html>
